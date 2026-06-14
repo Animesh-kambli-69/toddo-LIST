@@ -9,7 +9,7 @@ function App() {
     <>
       
       <h1>Todo List</h1>
-      </App >
+      
     </>
   )
 }
