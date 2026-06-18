@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <ReactLenis root>
-      <div classname="first-bg">
-        <section ref={scene1}className="section1">
-        <motion.div 
+      <div >
+        <section className="section1">
+        <motion.div className="first-bg"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, type: "spring" }}
+          transition={{ duration: 0.5, type: "spring"  }}
         >
           Hello World!
         </motion.div>

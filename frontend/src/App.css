@@ -1,3 +1,5 @@
 .first-bg {
     background-image: url('/assets/landing.png');
+    opacity: 0.5;
+    background-size: cover;
 }
