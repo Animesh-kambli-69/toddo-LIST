@@ -18,3 +18,14 @@
   z-index: 0;
   will-change: transform, opacity, filter;
 }
+.Scenecontent {
+   position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+  will-change: opacity, transform;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}

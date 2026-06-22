@@ -14,7 +14,8 @@ function App() {
   });
   const y1 = useTransform(scrollY, [0, 1], ["0%", "50%"]);
   const opacity1 = useTransform(scrollY, [0, 0.8], [1, 0.8]);
-  const scale1 = useTransform(scrollY, [0, 1], [1, 1.1]);
+  const scale1 = useTransform(scrollY, [0, 1], [1, 1.4]);
+  
 
 
   return (
@@ -30,33 +31,25 @@ function App() {
             scale: scale1,
           }} 
         />
-        
-        <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>
-          <motion.div
+        <motion.div className="Scenecontent" style={{ opacity:opacity1,
+          
+        }}>
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1 }}
-            style={{
-              color: "white",
-              fontSize: "2rem",
-              fontWeight: "bold",
-              textShadow: "0 4px 12px rgba(84, 81, 81, 0.4)"
-            }}>
-            Hello World!
-          </motion.div>
-          <motion.div
+          >
+            Hello Welcome to our Todo List!
+          </motion.h1>
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }} 
-            style={{
-              color: "white",
-              fontSize: "2rem",
-              fontWeight: "500",
-              textShadow: "0 2px 8px rgba(0,0,0,0.4)"
-            }}>
+            transition={{ duration: 0.8, delay: 0.4 }} 
+            >
             Todo List
-          </motion.div>
-        </div>
+          </motion.p>
+        </motion.div>
+        
         </section>
       </div>
     </ReactLenis>
